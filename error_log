@@ -1,0 +1,718 @@
+[09-Jan-2023 23:44:45 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN645938683","gross_amount":104000},"customer_details":{"first_name":"taufik heryunanto","email":"taufik@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-09 23:44:45 +0700","unit":"minute","duration":15}}
+[09-Jan-2023 23:44:46 Asia/Jakarta] b469978e-777f-4657-8d00-60ec771e7f2b
+[09-Jan-2023 23:45:12 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939980144
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-09 23:45:11
+    [transaction_status] => pending
+    [transaction_id] => f068c199-cf28-48cf-89c6-8a019997d07b
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => 0eaa9787f8cb3af37b71e05de11e9b99d4fcae653e3e7f34af34e33a80051f1f2305c2aefce6645df70ee9bae61722089c1bffac67866cb42f495d3adf203dc8
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN645938683
+    [merchant_id] => G822342939
+    [gross_amount] => 104000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-09 23:59:45
+    [currency] => IDR
+)
+
+[09-Jan-2023 23:45:36 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939980144
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-09 23:45:11
+    [transaction_status] => settlement
+    [transaction_id] => f068c199-cf28-48cf-89c6-8a019997d07b
+    [status_message] => midtrans payment notification
+    [status_code] => 200
+    [signature_key] => a9bb0e8b385390273a3fc443e077af3aa05967c5f00187b5dac0f14730dcbd99f970bd5d321023cca16a371e7de616322ed2b9ab5d32e423d7cf716fe9911b81
+    [settlement_time] => 2023-01-09 23:45:35
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN645938683
+    [merchant_id] => G822342939
+    [gross_amount] => 104000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-09 23:59:45
+    [currency] => IDR
+)
+
+[09-Jan-2023 23:46:06 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939980144
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-09 23:45:11
+    [transaction_status] => pending
+    [transaction_id] => f068c199-cf28-48cf-89c6-8a019997d07b
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => 0eaa9787f8cb3af37b71e05de11e9b99d4fcae653e3e7f34af34e33a80051f1f2305c2aefce6645df70ee9bae61722089c1bffac67866cb42f495d3adf203dc8
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN645938683
+    [merchant_id] => G822342939
+    [gross_amount] => 104000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-09 23:59:45
+    [currency] => IDR
+)
+
+[09-Jan-2023 23:46:39 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939980144
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-09 23:45:11
+    [transaction_status] => settlement
+    [transaction_id] => f068c199-cf28-48cf-89c6-8a019997d07b
+    [status_message] => midtrans payment notification
+    [status_code] => 200
+    [signature_key] => a9bb0e8b385390273a3fc443e077af3aa05967c5f00187b5dac0f14730dcbd99f970bd5d321023cca16a371e7de616322ed2b9ab5d32e423d7cf716fe9911b81
+    [settlement_time] => 2023-01-09 23:45:35
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN645938683
+    [merchant_id] => G822342939
+    [gross_amount] => 104000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-09 23:59:45
+    [currency] => IDR
+)
+
+[09-Jan-2023 23:49:59 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939980144
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-09 23:45:11
+    [transaction_status] => pending
+    [transaction_id] => f068c199-cf28-48cf-89c6-8a019997d07b
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => 0eaa9787f8cb3af37b71e05de11e9b99d4fcae653e3e7f34af34e33a80051f1f2305c2aefce6645df70ee9bae61722089c1bffac67866cb42f495d3adf203dc8
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN645938683
+    [merchant_id] => G822342939
+    [gross_amount] => 104000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-09 23:59:45
+    [currency] => IDR
+)
+
+[09-Jan-2023 23:50:02 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939980144
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-09 23:45:11
+    [transaction_status] => settlement
+    [transaction_id] => f068c199-cf28-48cf-89c6-8a019997d07b
+    [status_message] => midtrans payment notification
+    [status_code] => 200
+    [signature_key] => a9bb0e8b385390273a3fc443e077af3aa05967c5f00187b5dac0f14730dcbd99f970bd5d321023cca16a371e7de616322ed2b9ab5d32e423d7cf716fe9911b81
+    [settlement_time] => 2023-01-09 23:45:35
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN645938683
+    [merchant_id] => G822342939
+    [gross_amount] => 104000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-09 23:59:45
+    [currency] => IDR
+)
+
+[10-Jan-2023 09:10:25 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN671278623","gross_amount":47799},"customer_details":{"first_name":"taufik heryunanto","email":"taufik@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 09:10:25 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 09:10:27 Asia/Jakarta] c5ab4163-8ac1-44fa-828e-ed93ab1f7954
+[10-Jan-2023 15:14:38 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN619564473","gross_amount":288000},"customer_details":{"first_name":"taufik heryunanto","email":"taufik@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 15:14:38 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 15:14:39 Asia/Jakarta] 070c426a-de38-4c8a-9258-68e263b11acb
+[10-Jan-2023 15:14:47 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939334501
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-10 15:14:44
+    [transaction_status] => pending
+    [transaction_id] => 95267ae4-28a0-413c-ba3d-af86d94b8178
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => b4d380e41520f2371f663042adb0ab6f89e09ac6e8fcc225ef705b163528a1922bed35c5db143628ef3ef86b55df565472bc0822891e5c09e33f629318361a15
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN619564473
+    [merchant_id] => G822342939
+    [gross_amount] => 288000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 15:29:38
+    [currency] => IDR
+)
+
+[10-Jan-2023 15:15:21 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939334501
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-10 15:14:44
+    [transaction_status] => settlement
+    [transaction_id] => 95267ae4-28a0-413c-ba3d-af86d94b8178
+    [status_message] => midtrans payment notification
+    [status_code] => 200
+    [signature_key] => 96bae052e4e0a499b0884f128eaa7754d1ae5e04c77af968c419c63106a233f2edd3e09131d77917a77a4f5ab9deb4031bdf01947125042aa46de6bfbe591dcd
+    [settlement_time] => 2023-01-10 15:15:20
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN619564473
+    [merchant_id] => G822342939
+    [gross_amount] => 288000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 15:29:38
+    [currency] => IDR
+)
+
+[10-Jan-2023 15:26:29 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN760059186","gross_amount":120000},"customer_details":{"first_name":"Taufik Her","email":"heryun@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 15:26:29 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 15:26:30 Asia/Jakarta] e146f1e8-0cee-426d-b329-1d7a61564f36
+[10-Jan-2023 15:26:35 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939946691
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-10 15:26:33
+    [transaction_status] => pending
+    [transaction_id] => 02d6d272-ebfb-47ae-a012-e54a2dc2c374
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => b56afe82294efb568a8397092777026d65d446f57358c4dedbfdc4e090729d0855d384d98c23d767a6f6a701043e57d8ee365ce2fa9e224d411c55f780974a9a
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN760059186
+    [merchant_id] => G822342939
+    [gross_amount] => 120000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 15:41:29
+    [currency] => IDR
+)
+
+[10-Jan-2023 15:27:10 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939946691
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-10 15:26:33
+    [transaction_status] => settlement
+    [transaction_id] => 02d6d272-ebfb-47ae-a012-e54a2dc2c374
+    [status_message] => midtrans payment notification
+    [status_code] => 200
+    [signature_key] => 947a558ec056e212d91939728e364b0121f78fe913aa35cd1987125546210b1e450a1b0ea27791e60d5ab29e5f9216186cb9a144242a9a88ac00147afd6f97ab
+    [settlement_time] => 2023-01-10 15:27:08
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN760059186
+    [merchant_id] => G822342939
+    [gross_amount] => 120000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 15:41:29
+    [currency] => IDR
+)
+
+[10-Jan-2023 15:32:37 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN721088554","gross_amount":67000},"customer_details":{"first_name":"Taufik Her","email":"heryun@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 15:32:37 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 15:32:37 Asia/Jakarta] 1efca268-bab3-44ce-ae6b-cbb6b0cccbc6
+[10-Jan-2023 15:32:56 Asia/Jakarta] stdClass Object
+(
+    [transaction_time] => 2023-01-10 15:32:55
+    [transaction_status] => pending
+    [transaction_id] => 6f695a51-fb31-4ebc-88f8-d2eaddbfb6db
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => 7d1f552d5d420051c7a0730eb1d25ca21f97ad5160572bf3c6d59233197aa5eaa47939d577f84de5596a8c391c45cb2ee7c74fb25ef07b1cbdb822ec8ddfd1ab
+    [payment_type] => shopeepay
+    [order_id] => HRYN721088554
+    [merchant_id] => G822342939
+    [gross_amount] => 67000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 15:47:37
+    [currency] => IDR
+)
+
+[10-Jan-2023 15:33:02 Asia/Jakarta] stdClass Object
+(
+    [transaction_time] => 2023-01-10 15:32:55
+    [transaction_status] => settlement
+    [transaction_id] => 6f695a51-fb31-4ebc-88f8-d2eaddbfb6db
+    [status_message] => midtrans payment notification
+    [status_code] => 200
+    [signature_key] => 4d19cc0ad9358c4fd4867e6e803c8e34166556b0de7c81c81957c7f0a5d78a71039434f9bd6fc2f865b86a49947623a958df06fb6db9b78578b312e207707e72
+    [settlement_time] => 2023-01-10 15:33:02
+    [payment_type] => shopeepay
+    [order_id] => HRYN721088554
+    [merchant_id] => G822342939
+    [gross_amount] => 67000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 15:47:37
+    [currency] => IDR
+)
+
+[10-Jan-2023 15:52:59 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN778509776","gross_amount":147400},"customer_details":{"first_name":"Taufik Her","email":"heryun@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 15:52:59 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 15:52:59 Asia/Jakarta] 567120d8-333d-4d8d-bdd3-e73cd7f25386
+[10-Jan-2023 15:53:15 Asia/Jakarta] stdClass Object
+(
+    [transaction_type] => off-us
+    [transaction_time] => 2023-01-10 15:53:13
+    [transaction_status] => pending
+    [transaction_id] => 45c21430-2898-4ddd-873d-e0c4ef7de694
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => d6145f071f13f579de2c0e30b9563343863be55aeb3e92e8054c96e8517057a0cd279e56883f51ca586f6fd2ca690b686f1a7857fb6c86658a8d17e63ccbd51a
+    [reference_id] => 3cff88d7-1543-4134-a8b4-72c122c52b43
+    [payment_type] => qris
+    [order_id] => HRYN778509776
+    [merchant_id] => G822342939
+    [gross_amount] => 147400.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 16:07:59
+    [currency] => IDR
+    [acquirer] => gopay
+)
+
+[10-Jan-2023 15:54:05 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN715065842","gross_amount":212000},"customer_details":{"first_name":"Taufik Her","email":"heryun@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 15:54:05 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 15:54:05 Asia/Jakarta] abc8975a-8da3-4fe6-ab05-b71e3e4a6590
+[10-Jan-2023 15:54:12 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939761645
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-10 15:54:10
+    [transaction_status] => pending
+    [transaction_id] => 438c23d4-c529-431e-a8f0-6a8f1a2d8b67
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => f444b97d43eda31e7bcef7cfdccdc70e419f42ac1510859ebe40ae75271c060c85dc329f99f0cd5726f5ac5d1505a2d6f910cdd50880725a5b01177fdcc7ac9b
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN715065842
+    [merchant_id] => G822342939
+    [gross_amount] => 212000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 16:09:05
+    [currency] => IDR
+)
+
+[10-Jan-2023 15:55:00 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939761645
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-10 15:54:10
+    [transaction_status] => settlement
+    [transaction_id] => 438c23d4-c529-431e-a8f0-6a8f1a2d8b67
+    [status_message] => midtrans payment notification
+    [status_code] => 200
+    [signature_key] => f23476d071583d963af07d7098b833a9c91929d1641d233e906e9d9c46e4ba51891f26dcc54f34c71366668687cc5fa59ff162f772adb7824e3c44fea2b60632
+    [settlement_time] => 2023-01-10 15:54:58
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN715065842
+    [merchant_id] => G822342939
+    [gross_amount] => 212000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 16:09:05
+    [currency] => IDR
+)
+
+[10-Jan-2023 16:08:57 Asia/Jakarta] stdClass Object
+(
+    [transaction_type] => off-us
+    [transaction_time] => 2023-01-10 15:53:13
+    [transaction_status] => expire
+    [transaction_id] => 45c21430-2898-4ddd-873d-e0c4ef7de694
+    [status_message] => midtrans payment notification
+    [status_code] => 202
+    [signature_key] => c5a71b7d8dd12e482d9f571bdde212ec36f3fc6cc0376f000e8feaf99880bd322c1ea80438211106083dc3065cf32276bae73ca16f9ec9e3e6814383008c506d
+    [reference_id] => 3cff88d7-1543-4134-a8b4-72c122c52b43
+    [payment_type] => qris
+    [order_id] => HRYN778509776
+    [merchant_id] => G822342939
+    [gross_amount] => 147400.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 16:07:59
+    [currency] => IDR
+    [acquirer] => gopay
+)
+
+[10-Jan-2023 17:54:30 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN819469067","gross_amount":124000},"customer_details":{"first_name":"aa","email":"aa@gmail.com","phone":"876587677"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 17:54:30 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 17:54:31 Asia/Jakarta] 9219c24a-b32d-46b7-b7f7-5cba0e75e5ae
+[10-Jan-2023 17:55:13 Asia/Jakarta] stdClass Object
+(
+    [transaction_time] => 2023-01-10 17:55:11
+    [transaction_status] => pending
+    [transaction_id] => 0c86dab8-c1d8-4297-8f44-b1a675d3e4ed
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => 8abe804eaff45d9076027674c1aeec4e8d4b6ca6dcf854aa2d9864feba962e659ed37d3b0c406f67ecb79b330195eb97752f42e88279e6e08c8f550ec08387a8
+    [payment_type] => bri_epay
+    [order_id] => HRYN819469067
+    [merchant_id] => G822342939
+    [gross_amount] => 124000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 18:09:30
+    [currency] => IDR
+)
+
+[10-Jan-2023 17:55:33 Asia/Jakarta] stdClass Object
+(
+    [transaction_time] => 2023-01-10 17:55:11
+    [transaction_status] => deny
+    [transaction_id] => 0c86dab8-c1d8-4297-8f44-b1a675d3e4ed
+    [status_message] => midtrans payment notification
+    [status_code] => 202
+    [signature_key] => d92cbc1f0b7a9f0cb0b176c223c935e5445e32956cf098ed487517dbe4954e39fd8198f2a5cdc59cef22e7c05b828a6aca7ec8e4efe3b66650207eaed54970b3
+    [payment_type] => bri_epay
+    [order_id] => HRYN819469067
+    [merchant_id] => G822342939
+    [gross_amount] => 124000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 18:09:30
+    [currency] => IDR
+    [approval_code] => 1673348112128
+)
+
+[10-Jan-2023 19:19:42 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN796798179","gross_amount":45799},"customer_details":{"first_name":"Taufik Her","email":"heryun@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 19:19:42 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 19:19:43 Asia/Jakarta] f9e8c52f-785f-4069-8176-bb719f5d2d45
+[10-Jan-2023 19:20:16 Asia/Jakarta] stdClass Object
+(
+    [transaction_type] => off-us
+    [transaction_time] => 2023-01-10 19:20:12
+    [transaction_status] => pending
+    [transaction_id] => 191f943b-3f41-4bc7-8963-103f0c587b72
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => 2768122ce5096b4355e9e80f17159e5153c2b53d8f78ae02cf7ff11be271d4cbcbeedf37014385d00631751abe5d5ad96b70c88fbd167b7b7645a7b7d6a02095
+    [reference_id] => QR-NlFjKbqnoEw2xbIE2y0Wgw
+    [payment_type] => qris
+    [order_id] => HRYN796798179
+    [merchant_id] => G822342939
+    [gross_amount] => 45799.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 19:34:42
+    [currency] => IDR
+    [acquirer] => airpay shopee
+)
+
+[10-Jan-2023 19:20:57 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN739001253","gross_amount":14000},"customer_details":{"first_name":"Taufik Her","email":"heryun@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 19:20:57 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 19:20:57 Asia/Jakarta] 8d2918e1-3bb0-4e4d-8796-815839efe1c9
+[10-Jan-2023 19:21:01 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939729025
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-10 19:21:00
+    [transaction_status] => pending
+    [transaction_id] => 745ab78b-411f-48b8-8e2c-a7bbda6ee92d
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => 1347a6d79602c4fd9c824ddb4e8424b36e8741434a9190e44f649fe2f6b1bb5a447a11eafb29304de126d87b5bb134c620ffb2dd8be11fd42bcb63a786ea7abf
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN739001253
+    [merchant_id] => G822342939
+    [gross_amount] => 14000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 19:35:57
+    [currency] => IDR
+)
+
+[10-Jan-2023 19:21:31 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939729025
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-10 19:21:00
+    [transaction_status] => settlement
+    [transaction_id] => 745ab78b-411f-48b8-8e2c-a7bbda6ee92d
+    [status_message] => midtrans payment notification
+    [status_code] => 200
+    [signature_key] => 839e89893ed47ab353375921735484e7d73235a30ab1b8c057f58540d62bfdb570152122c79240b224eb59f8cbfe653ca19305de7260d85c183fae8c465786e2
+    [settlement_time] => 2023-01-10 19:21:30
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN739001253
+    [merchant_id] => G822342939
+    [gross_amount] => 14000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 19:35:57
+    [currency] => IDR
+)
+
+[10-Jan-2023 19:22:15 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN719191332","gross_amount":65000},"customer_details":{"first_name":"Taufik Her","email":"heryun@gmail.com","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-10 19:22:15 +0700","unit":"minute","duration":15}}
+[10-Jan-2023 19:22:15 Asia/Jakarta] 86c9e1f7-91be-497b-8950-e907beb07f6a
+[10-Jan-2023 19:22:37 Asia/Jakarta] stdClass Object
+(
+    [transaction_type] => off-us
+    [transaction_time] => 2023-01-10 19:22:36
+    [transaction_status] => pending
+    [transaction_id] => ab7b3a9e-d99e-464c-a57a-20e427393f38
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => 3bcaf197256ccfb354ff597aaeaed53c7bddab0af2bea189634ab8d6585e5bdbffdcc5df909a7f92031cca30316a6b587bf59e270cb8f61aa8dad289ce4ce006
+    [reference_id] => aac5ab1d-6a28-47c3-816f-484eb6bffff3
+    [payment_type] => qris
+    [order_id] => HRYN719191332
+    [merchant_id] => G822342939
+    [gross_amount] => 65000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 19:37:15
+    [currency] => IDR
+    [acquirer] => gopay
+)
+
+[10-Jan-2023 19:34:46 Asia/Jakarta] stdClass Object
+(
+    [transaction_type] => off-us
+    [transaction_time] => 2023-01-10 19:20:12
+    [transaction_status] => expire
+    [transaction_id] => 191f943b-3f41-4bc7-8963-103f0c587b72
+    [status_message] => midtrans payment notification
+    [status_code] => 202
+    [signature_key] => 759f0491e604f0c8c40e4b44edb7e4e7deeff7f768750dec334d020093b3c580565bb6e6eabf682e8c78b71064de0e1ef21b54ba1cba9df0552b8b6dc37e5111
+    [reference_id] => QR-NlFjKbqnoEw2xbIE2y0Wgw
+    [payment_type] => qris
+    [order_id] => HRYN796798179
+    [merchant_id] => G822342939
+    [gross_amount] => 45799.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 19:34:42
+    [currency] => IDR
+    [acquirer] => airpay shopee
+)
+
+[10-Jan-2023 19:38:20 Asia/Jakarta] stdClass Object
+(
+    [transaction_type] => off-us
+    [transaction_time] => 2023-01-10 19:22:36
+    [transaction_status] => expire
+    [transaction_id] => ab7b3a9e-d99e-464c-a57a-20e427393f38
+    [status_message] => midtrans payment notification
+    [status_code] => 202
+    [signature_key] => f02d945d221dd0e8c2bbca473fc31f94b600a00c035866db7530465948eec493d44f9f6572bf696689fb21002356f79ac796d31ca66072225b1db4e161e4fbb9
+    [reference_id] => aac5ab1d-6a28-47c3-816f-484eb6bffff3
+    [payment_type] => qris
+    [order_id] => HRYN719191332
+    [merchant_id] => G822342939
+    [gross_amount] => 65000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-10 19:37:15
+    [currency] => IDR
+    [acquirer] => gopay
+)
+
+[12-Jan-2023 00:46:09 Asia/Jakarta] {"transaction_details":{"order_id":"HRYN955183164","gross_amount":70000},"customer_details":{"first_name":"Fiko","email":"fiko@students.amikom.ac.id","phone":"2147483647"},"credit_card":{"secure":true},"expiry":{"start_time":"2023-01-12 00:46:09 +0700","unit":"minute","duration":15}}
+[12-Jan-2023 00:46:11 Asia/Jakarta] 4e06413a-bef9-46af-8f4d-f7dda491bf30
+[12-Jan-2023 00:47:24 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939693734
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-12 00:47:22
+    [transaction_status] => pending
+    [transaction_id] => 91dd0f9b-3d20-4468-862c-44faa5107b32
+    [status_message] => midtrans payment notification
+    [status_code] => 201
+    [signature_key] => 5a1a00779d162eeee08320dd76cd56faa2a284f60626d394a2bf506aae5654094cd90a328a21e1038ebbf4c904d9cee0a1ca719d7664b44b5a844e076576fb47
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN955183164
+    [merchant_id] => G822342939
+    [gross_amount] => 70000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-12 01:01:09
+    [currency] => IDR
+)
+
+[12-Jan-2023 00:47:48 Asia/Jakarta] stdClass Object
+(
+    [va_numbers] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [va_number] => 42939693734
+                    [bank] => bca
+                )
+
+        )
+
+    [transaction_time] => 2023-01-12 00:47:22
+    [transaction_status] => settlement
+    [transaction_id] => 91dd0f9b-3d20-4468-862c-44faa5107b32
+    [status_message] => midtrans payment notification
+    [status_code] => 200
+    [signature_key] => e1465ca87bafbb8840adbc94cb3481881d65601fdc4cc67c084da2487590401f01389e6eafa946cb5a2b7c7e365b6e64ee85e35cfc11d2844e6f5edf933abdc8
+    [settlement_time] => 2023-01-12 00:47:47
+    [payment_type] => bank_transfer
+    [payment_amounts] => Array
+        (
+        )
+
+    [order_id] => HRYN955183164
+    [merchant_id] => G822342939
+    [gross_amount] => 70000.00
+    [fraud_status] => accept
+    [expire_time] => 2023-01-12 01:01:09
+    [currency] => IDR
+)
+

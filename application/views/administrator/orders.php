@@ -77,7 +77,7 @@
                             <?php }else if($data['status'] == 2){ ?>
                                 <td>Sedang diproses</td>
                             <?php }else if($data['status'] == 3){ ?>
-                                <td>Sedang dikirim</td>
+                                <td>Selesai</td>
 							<?php }else if($data['status'] == 4){ ?>
 								<td>Selesai</td>
 							<?php } ?>

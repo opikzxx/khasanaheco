@@ -45,7 +45,7 @@
                 <?php }else if($ord['status'] == 2){ ?>
                     <td>Sedang diproses</td>
                 <?php }else if($ord['status'] == 3){ ?>
-                    <td>Sedang dikirim</td>
+                    <td>Selesai</td>
                 <?php }else{ ?>
                     <td>Selesai</td>
                 <?php } ?>

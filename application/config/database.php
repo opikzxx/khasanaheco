@@ -76,10 +76,10 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'db',
-	'username' => 'freehost',
-	//legj6825_heryuna
-	'password' => 'freehost',
-	'database' => 'heryuna',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'khasanaheco',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

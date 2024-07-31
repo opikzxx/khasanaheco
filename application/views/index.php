@@ -6,7 +6,7 @@
       </div>
       <div class="col-md-6 order-2 order-md-1">
         <h1>Khasanah Eco Bakery Cake</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo pariatur quam ducimus nam consectetur explicabo velit voluptas eos. Esse libero assumenda excepturi eveniet hic commodi enim veniam tenetur expedita! Officiis!</p>
+        <p>Toko Roti Khasanah Eco Bakery and Cake adalah sebuah toko roti yang menawarkan berbagai produk roti dan kue dengan kualitas tinggi dan perhatian terhadap detail.</p>
         <div class="d-flex gap-2">
         <a href="#product-section" class="btn btn-dark">Lihat Produk</a>
         </div>
@@ -49,15 +49,13 @@
       <?php if($recent->num_rows() > 0){ ?>
         <?php foreach($recent->result_array() as $p): ?>
           <a href="<?= base_url(); ?>products/detail_product/<?= $p['id']; ?>">
-            <div class="card">
-              <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top" >
-              <div class="card-body">
-                <p class="card-text mb-0"><?= $p['title']; ?></p>
-
-                <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
-
-              </div>
-            </div>
+          <div class="card d-flex flex-column">
+          <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top img-fluid" alt="Product Image" style="height: 90px; object-fit: contain;">
+          <div class="card-body d-flex flex-column flex-grow-1">
+            <p class="card-text mb-0" style="height: 50px;"><?= $p['title']; ?></p>
+            <p class="newPrice">Rp <?= str_replace(",", ".", number_format($p['price'])); ?></p>
+          </div>
+        </div>
           </a>
         <?php endforeach; ?>
         <div class="clearfix"></div>
@@ -73,10 +71,9 @@
         <?php foreach($best->result_array() as $p): ?>
           <a href="<?= base_url(); ?>products/detail_product/<?= $p['id']; ?>">
             <div class="card">
-              <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top" >
-              <div class="card-body">
-                <p class="card-text mb-0"><?= $p['title']; ?></p>
-
+            <img src="<?= base_url(); ?>assets/images/product/<?= $p['img']; ?>" class="card-img-top img-fluid" alt="Product Image" style="height: 90px; object-fit: contain;">
+            <div class="card-body">
+                <p class="card-text mb-0" style="height: 50px;"><?= $p['title']; ?></p>
                 <p class="newPrice">Rp <?= str_replace(",",".",number_format($p['price'])); ?></p>
 
               </div>

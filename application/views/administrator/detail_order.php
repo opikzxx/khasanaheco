@@ -86,7 +86,7 @@
             <?php if($data['pay_status'] == 'settlement' && $data['status'] == 0){ ?>
                 <a href="<?= base_url(); ?>administrator/process_order/<?= $data['id']; ?>" onclick="return confirm('Yakin ingin mengubah status pesanan menjadi sedang di proses?');" class="btn btn-info btn-sm">Proses Pesanan</a>
             <?php }else if($data['status'] == 2){ ?>
-                <a href="<?= base_url(); ?>administrator/send_order/<?= $data['id']; ?>" class="btn btn-info btn-sm">Kirim Pesanan</a>
+                <a href="<?= base_url(); ?>administrator/send_order/<?= $data['id']; ?>" class="btn btn-info btn-sm">Selesaikan Pesanan</a>
             <?php } ?>
         </div>
     </div>

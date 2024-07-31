@@ -1,4 +1,5 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
+<?php
+if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
 
 class Midtrans {
 
@@ -92,17 +93,18 @@ class Midtrans {
 	        'Authorization: Basic ' . base64_encode($server_key . ':')
 	      ),
 	      CURLOPT_RETURNTRANSFER => 1,
-	      // CURLOPT_CAINFO => dirname(__FILE__) . "/veritrans/cacert.pem"
+	      CURLOPT_SSL_VERIFYPEER => false, // Nonaktifkan verifikasi SSL
+	      CURLOPT_SSL_VERIFYHOST => false, // Nonaktifkan verifikasi SSL
 	    );
 
-	    // merging with Veritrans_Config::$curlOptions
+	    // merging with Midtrans::$curlOptions
 	    if (count(Midtrans::$curlOptions)) {
-	      // We need to combine headers manually, because it's array and it will no be merged
-	      if (Midtrans::$curlOptions[CURLOPT_HTTPHEADER]) {
-	        $mergedHeders = array_merge($curl_options[CURLOPT_HTTPHEADER], Midtrans::$curlOptions[CURLOPT_HTTPHEADER]);
-	        $headerOptions = array( CURLOPT_HTTPHEADER => $mergedHeders );
+	      // Combine headers manually because it's an array and won't merge automatically
+	      if (isset(Midtrans::$curlOptions[CURLOPT_HTTPHEADER])) {
+	        $mergedHeaders = array_merge($curl_options[CURLOPT_HTTPHEADER], Midtrans::$curlOptions[CURLOPT_HTTPHEADER]);
+	        $headerOptions = array(CURLOPT_HTTPHEADER => $mergedHeaders);
 	      } else {
-	        $mergedHeders = array();
+	        $mergedHeaders = array();
 	      }
 
 	      $curl_options = array_replace_recursive($curl_options, Midtrans::$curlOptions, $headerOptions);
@@ -123,20 +125,19 @@ class Midtrans {
 
 	    $result = curl_exec($ch);
       $info = curl_getinfo($ch);
-	    // curl_close($ch);
 
 	    if ($result === FALSE) {
 	      throw new Exception('CURL Error: ' . curl_error($ch), curl_errno($ch));
-	    }
-	    else {
+	    } else {
 	      $result_array = json_decode($result);
 	      if ($info['http_code'] != 201 && !in_array($result_array->status_code, array(200, 201, 202, 407)) ) {
-        $message = 'Midtrans Error (' . $info['http_code'] . '): '
-            . implode(',', $result_array->error_messages);
-        throw new Exception($message, $info['http_code']);
-
-      }
-	      else {
+          if (isset($result_array->error_messages) && is_array($result_array->error_messages)) {
+            $message = 'Midtrans Error (' . $info['http_code'] . '): ' . implode(',', $result_array->error_messages);
+          } else {
+            $message = 'Midtrans Error (' . $info['http_code'] . ')';
+          }
+          throw new Exception($message, $info['http_code']);
+	      } else {
 	        return $result_array;
 	      }
 	    }
@@ -144,7 +145,6 @@ class Midtrans {
 
   public static function getSnapToken($params)
   {
-    
     $result = Midtrans::post(
         Midtrans::getSnapBaseUrl() . '/transactions',
         Midtrans::$serverKey,
@@ -167,7 +167,7 @@ class Midtrans {
   	}
 
   	/**
-   	* Appove challenge transaction
+   	* Approve challenge transaction
    	* @param string $id Order ID or transaction ID
    	* @return string
    	*/
@@ -180,7 +180,7 @@ class Midtrans {
   	}
 
   	/**
-   	* Cancel transaction before it's setteled
+   	* Cancel transaction before it's settled
    	* @param string $id Order ID or transaction ID
    	* @return string
    	*/
@@ -193,7 +193,7 @@ class Midtrans {
   	}
 
    /**
-    * Expire transaction before it's setteled
+    * Expire transaction before it's settled
     * @param string $id Order ID or transaction ID
     * @return mixed[]
     */

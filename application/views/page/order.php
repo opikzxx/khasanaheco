@@ -24,7 +24,7 @@
                         <?php }else if($d['status'] == 2){ ?>
                             <td>Sedang diproses</td>
                         <?php }else if($d['status'] == 3){ ?>
-                            <td>Sedang dikirim</td>
+                            <td>Selesai</td>
                         <?php } ?>
                         <td><small><a href="<?= base_url(); ?>profile/checkout/<?= $d['id']; ?>" class="text-info">Detail</a></small></td>
                     </tr>

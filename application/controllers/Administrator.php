@@ -364,17 +364,17 @@ class Administrator extends CI_Controller {
         $this->load->view('templates/footer_admin');
     }
 
-    function print() {	 
+    // public function print() {	 
 
-		$dari = $this->uri->segment('3');
-		$sampai = $this->uri->segment('4');
+	// 	$dari = $this->uri->segment('3');
+	// 	$sampai = $this->uri->segment('4');
 
-		$data['dari'] = $dari;
-		$data['sampai'] = $sampai;
-		$data['data_transaksi'] = $this->Order_model->getOrder($dari, $sampai);
+	// 	$data['dari'] = $dari;
+	// 	$data['sampai'] = $sampai;
+	// 	$data['data_transaksi'] = $this->Order_model->getOrder($dari, $sampai);
 		
-		$this->load->view('print/transaksi', $data);
-	}
+	// 	$this->load->view('print/transaksi', $data);
+	// }
     
 
     public function logout()

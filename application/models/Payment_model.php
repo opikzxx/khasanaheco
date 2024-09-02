@@ -19,6 +19,8 @@ class Payment_model extends CI_Model {
         CURLOPT_HTTPHEADER => array(
             "key: ". $this->api_key,
         ),
+        CURLOPT_SSL_VERIFYPEER => false, // Tambahkan baris ini untuk menonaktifkan verifikasi SSL
+        CURLOPT_SSL_VERIFYHOST => false,
         ));
 
         $response = curl_exec($curl);
@@ -48,6 +50,8 @@ class Payment_model extends CI_Model {
         CURLOPT_HTTPHEADER => array(
             "key: ". $this->api_key,
         ),
+        CURLOPT_SSL_VERIFYPEER => false, // Tambahkan baris ini untuk menonaktifkan verifikasi SSL
+        CURLOPT_SSL_VERIFYHOST => false,
         ));
 
         $response = curl_exec($curl);
@@ -82,6 +86,8 @@ class Payment_model extends CI_Model {
             "content-type: application/x-www-form-urlencoded",
             "key: ". $this->api_key,
         ),
+        CURLOPT_SSL_VERIFYPEER => false, // Tambahkan baris ini untuk menonaktifkan verifikasi SSL
+        CURLOPT_SSL_VERIFYHOST => false,
         ));
 
         $response = curl_exec($curl);
@@ -97,36 +103,50 @@ class Payment_model extends CI_Model {
         }
     }
 
-    public function succesfully(){
+    public function succesfully() {
         $getuser = $this->db->get_where('user', ['id' => $this->session->userdata('id')])->row_array();
-        $idTrans = 'HRYN' . $getuser['id'] .  substr(rand(),0,5) . substr(time(),7);;
-        $courier = 0;
+        $idTrans = 'HRYN' . $getuser['id'] . substr(rand(), 0, 5) . substr(time(), 7);
         $date_submit = date("Y-m-d H:i:s");
-        $courier = 0;
-        $kurir = 'Ambil Di Tempatß';
-
+        
+        // Ambil opsi kurir dari form sebelumnya
+        $kurir = $this->input->post('courier_option'); // Pastikan form sebelumnya mengirimkan nilai ini
+        $courier_service = 'Ambil Di Tempat';
+        $ongkir = 0;
+    
+        // Periksa apakah kurir adalah "Antar (Maks 5KM)"
+        if ($kurir === 'Antar (Maks 5KM)') {
+            $courier_service = 'Antar (Maks 5KM)';
+            $ongkir = 10000; // Nilai ongkir sesuai dengan logika Anda
+        }
+    
+        // Masukkan setiap item dalam cart ke tabel detail_transaction
         foreach ($this->cart->contents() as $item) {
             $data = array(
                 'idTrans' => $idTrans,
                 'idProducts' => $item['productId'],
                 'qty'     => $item['qty'],
                 'price'   => $item['price'],
-               
-        );
-                $this->db->insert('detail_transaction', $data);
+            );
+            $this->db->insert('detail_transaction', $data);
         }
-            
+    
+        // Hapus cart setelah transaksi selesai
         $this->cart->destroy();
+    
+        // Masukkan data transaksi ke tabel transaction
         $data = [
             "id" => $idTrans,
             'idUser' => $this->session->userdata('id'),
-            'courier' => 0,
-            'courier_service' => 'Ambil Di Tempat',
-            "ongkir" => 0,
+            'courier' => 1, // 1 bisa digunakan sebagai identifier kurir "Antar"
+            'courier_service' => $courier_service,
+            "ongkir" => $ongkir,
             "date" => $date_submit
         ];
         $this->db->insert('transaction', $data);
+    
+        // Redirect ke halaman checkout atau detail transaksi
         redirect(base_url() . 'profile/checkout/' . $idTrans);
     }
+    
 
 }

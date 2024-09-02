@@ -56,7 +56,7 @@
             </tr>
         </table>
         <hr>
-        <h2 class="title">Metode: <b class="text-primary">Ambil Di Tempat</b></h2>
+        <h2 class="title">Metode: <b class="text-primary"><?= $ord['courier_service']; ?></b></h2>
         <hr>
 
         <div class="row">
@@ -82,6 +82,10 @@
                     <tr>
                         <td>Harga Produk</td>
                         <td>: Rp<?= number_format($ord['total'],0,",","."); ?></td>
+                    </tr>
+                    <tr>
+                        <td>Ongkos Kirim</td>
+                        <td>: Rp<?= number_format($ord['ongkir'],0,",","."); ?></td>
                     </tr>
                     <tr>
                         <td>Total Belanja</td>

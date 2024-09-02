@@ -48,8 +48,6 @@
           <a class="dropdown-item" href="<?= base_url(); ?>profile/transaction">Transaksi</a>
         <?php } ?>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="<?= base_url(); ?>profile/edit-profile">Edit Profil</a>
-        <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="<?= base_url(); ?>logout">Keluar</a>
       </div>
     </div>

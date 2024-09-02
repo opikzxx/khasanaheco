@@ -14,7 +14,7 @@ class Order_model extends CI_Model {
 
      function getInvoice($idTrans) {
         $this->db->select ( 'SUM(detail_transaction.price*detail_transaction.qty) As total, detail_transaction.idTrans As id, detail_transaction.qty As qty, transaction.ongkir As ongkir, detail_transaction.price As price,
-                            transaction.pay_status As pay_status, transaction.date As date, user.name As uName, user.regency As regency, transaction.link_pay As link_pay, transaction.status As status,transaction.courier As courier,
+                            transaction.pay_status As pay_status, transaction.date As date, transaction.courier_service As courier_service, user.name As uName, user.regency As regency, transaction.link_pay As link_pay, transaction.status As status,transaction.courier As courier,
                             user.province As province, user.address As address, user.email As email, user.telp As telp, products.title As title, products.img As pImg,
                             products.id As pId' ); 
         $this->db->from ( 'products' );

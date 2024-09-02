@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+// controller untuk mengelola seluruh konten dashboard admin
 class Administrator extends CI_Controller {
     public function __construct(){
         parent::__construct();
@@ -14,6 +14,7 @@ class Administrator extends CI_Controller {
         }
     }
 	
+    // untuk membuat rooting halaman dashboard
     public function index(){
         $data['title'] = 'Dashboard - Admin Panel';
         $this->load->view('templates/header_admin', $data);
@@ -310,12 +311,6 @@ class Administrator extends CI_Controller {
         }
     }
 
-    public function lakukan_download($id){		
-        $this->load->helper('download');	
-        $file = $this->Order_model->getInvoice($id)->row_array();	
-        $gambar = $file['gambar'];
-		force_download('assets/images/order/'.$gambar ,NULL);
-	}
 
     public function process_order($id){
         $buyer = $this->db->get_where('transaction', ['id' => $id])->row_array();
@@ -338,7 +333,7 @@ class Administrator extends CI_Controller {
         $this->db->update('transaction');
         $this->session->set_flashdata('upload', "<script>
             swal({
-            text: 'Status berhasil diubah menjadi Sedang Dikirim',
+            text: 'Status berhasil diubah menjadi Selesai',
             icon: 'success'
             });
         </script>");
